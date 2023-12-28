@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -146,6 +147,47 @@ body {
   opacity: 0.9;
 }
 
+.service .icon {
+  background-color: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid #aaa;
+}
+.service .desc {
+  font-weight: 500;
+}
+
+.service.animate {
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.service.animate .icon {
+  background-color: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid #ddd;
+}
+.service.animate .desc {
+  font-weight: 500;
+  transition: 0.4s linear;
+}
+.service.animate:hover {
+  background-color: #db4444;
+  color: #fff !important;
+}
+.service.animate:hover .icon {
+  background-color: #fff;
+  color: #000;
+  border: 8px solid rgba(221, 221, 221, 0.5137254902);
+}
+.service.animate:hover .desc {
+  color: #fff;
+}
+
 .discount {
   background-color: #000000;
 }
@@ -170,9 +212,6 @@ body {
 
 .navbar {
   border-bottom: 1.5px solid #ddd;
-}
-.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  border-bottom: 2px solid #ddd;
 }
 .navbar .navbar-collapse form .form-outline {
   background-color: #f5f5f5;
@@ -254,7 +293,6 @@ body {
   color: #fff;
 }
 .box.active {
-  background-color: #db4444;
   color: #fff;
 }
 
@@ -281,18 +319,6 @@ body {
 .swiperImage .butt {
   bottom: 23%;
   left: 5%;
-}
-
-.services .service .icon {
-  background-color: #000;
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 8px solid #aaa;
-}
-.services .service .desc {
-  font-weight: 600;
 }
 
 .footer {
@@ -345,4 +371,18 @@ body {
 }
 .cart .helpers .total .line h1 {
   color: #474646;
+}
+
+.about .desc {
+  text-align: justify;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.CardEmployer .card {
+  width: 18rem;
+  border: none;
+}
+.CardEmployer .card img {
+  height: 18rem;
 }/*# sourceMappingURL=style.css.map */

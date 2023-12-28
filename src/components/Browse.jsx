@@ -23,7 +23,7 @@ const Browse = () => {
                 </div>
                 
                 <div className="row mt-5">
-                    <div className="col-2">
+                    <div className="col-2 active">
                         <Box icon={<FaMobileScreen />} title='phones' />
                     </div>
                     <div className="col-2">

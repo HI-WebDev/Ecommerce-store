@@ -65,7 +65,7 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         width: 15rem;
-        height:15.5rem ;
+        height: 15.5rem;
         position: relative;
         cursor: pointer;
         // opacity: .8;
@@ -150,7 +150,7 @@ body {
             padding: 9px;
           }
         }
-        .sec{
+        .sec {
           background-color: green;
         }
       }
@@ -166,5 +166,50 @@ body {
   color: #fff;
   .title {
     opacity: 0.9;
+  }
+}
+
+//service box
+.service {
+  .icon {
+    background-color: #000;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 8px solid #aaa;
+  }
+  .desc {
+    font-weight: 500;
+  }
+}
+
+//service box animate
+.service.animate {
+  cursor: pointer;
+  transition: .4s linear;
+  .icon {
+    background-color: #000;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 8px solid #ddd;
+  }
+  .desc {
+    font-weight: 500;
+    transition: .4s linear;
+  }
+  &:hover{
+    background-color: #db4444;
+    color: #fff !important;
+  }
+  &:hover .icon{
+    background-color: #fff;
+    color: #000;
+    border: 8px solid #dddddd83;
+  }
+  &:hover .desc{
+    color: #fff;
   }
 }
