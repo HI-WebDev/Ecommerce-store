@@ -1,0 +1,51 @@
+.flash {
+  .timing {
+    .time {
+      .days {
+        &::before {
+          content: "Days";
+          position: absolute;
+          top: -15%;
+          left: 6%;
+          font-size: 11px;
+        }
+      }
+      .days {
+        &::before {
+          content: "Days";
+          position: absolute;
+          top: -15%;
+          left: 6%;
+          font-size: 11px;
+        }
+      }
+      .hours {
+        &::before {
+          content: "Hours";
+          position: absolute;
+          top: -15%;
+          left: 6%;
+          font-size: 11px;
+        }
+      }
+      .minutes {
+        &::before {
+          content: "Minutes";
+          position: absolute;
+          top: -15%;
+          left: 6%;
+          font-size: 11px;
+        }
+      }
+      .seconds {
+        &::before {
+          content: "Seconds";
+          position: absolute;
+          top: -15%;
+          left: 6%;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

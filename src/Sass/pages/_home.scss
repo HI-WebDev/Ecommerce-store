@@ -1,0 +1,14 @@
+.home {
+  .aside {
+    border-right: 1.5px solid #ddd;
+    span {
+      cursor: pointer;
+      &:hover{
+        opacity: .8;
+      }
+      .angle{
+        right: 25%;
+      }
+    }
+  }
+}

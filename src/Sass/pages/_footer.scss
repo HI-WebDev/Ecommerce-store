@@ -1,0 +1,24 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  ul {
+    li {
+      cursor: pointer;
+      &:hover {
+        opacity: 0.82;
+      }
+    }
+  }
+
+  .socials {
+    span {
+      cursor: pointer;
+      &:hover{
+        opacity: .9;
+    }
+  }
+  .copyright {
+    border-top: 2px solid rgba(255, 255, 255, 0.35) !important;
+  }
+}
+}

@@ -1,0 +1,61 @@
+.discount {
+  background-color: #000000;
+  h2 {
+    color: #fafafac7;
+    span {
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  .language {
+    color: #ffffffe5;
+    opacity: 1;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+.navbar {
+  border-bottom: 1.5px solid #ddd;
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          &:hover {
+            border-bottom: 2px solid #ddd;
+          }
+        }
+      }
+    }
+    form {
+      .form-outline {
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        cursor: pointer;
+        input {
+          background-color: #f5f5f5;
+          border: none;
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
+      .buttons {
+        span {
+          cursor: pointer;
+        }
+        .like {
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

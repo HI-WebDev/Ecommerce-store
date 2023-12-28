@@ -1,0 +1,30 @@
+.swiperImage {
+  .image {
+    .categories {
+      color: #00ff66;
+      top: 15%;
+      left: 5%;
+    }
+    .center {
+      top: 25%;
+      left: 5%;
+      .desc {
+        color: white;
+      }
+      ul {
+        li {
+          background-color: #fff;
+          font-size: 9px;
+          border-radius: 50%;
+          width: 50px;
+          height: 50px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .butt {
+    bottom: 23%;
+    left: 5%;
+  }
+}

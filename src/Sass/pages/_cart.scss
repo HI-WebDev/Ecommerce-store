@@ -1,0 +1,39 @@
+.cart {
+  .card {
+    .card-body {
+      box-shadow: 0 3px 9px 0px #aaa;
+      .del {
+        top: 5%;
+        left: 2%;
+        background-color: #db4444;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        opacity: 0.4;
+        cursor: pointer;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .helpers {
+    .return {
+      border: 1.8px solid #aaa;
+      box-shadow: 0 1px 3px 0 #aaa;
+    }
+    .total {
+      border: 2px solid #000;
+      border-radius: 4px;
+      box-shadow: 0 1px 2px 0 #aaa;
+      .line {
+        border-bottom: 2px solid #ddd;
+        h1{
+            color: #474646;
+        }
+      }
+
+    }
+  }
+}

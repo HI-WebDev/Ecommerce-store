@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+//header in chaque component
+.header {
+  color: #db4444;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #db4444;
+    width: 14px;
+    border-radius: 4px;
+    height: 30px;
+    left: -2%;
+    top: -10%;
+  }
+}
+
+//arrows after header
+.arrow {
+  span {
+    background-color: #eee;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+//main button
+.mainBtn {
+  background-color: #db4444;
+  color: #fff !important;
+  cursor: pointer;
+  border-radius: 4px;
+  &:hover {
+    background-color: #db4444;
+    color: #fff;
+    opacity: 0.9;
+  }
+}
+
+//main product
+.product {
+  .card {
+    // width: 18rem;
+    border: none !important;
+    .image {
+      height: 17rem;
+      // background-color: #f5f5f5;
+      background-color: #fff;
+      border: 2px solid #eee;
+      border-radius: 5px;
+      .card-img-top {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 15rem;
+        height:15.5rem ;
+        position: relative;
+        cursor: pointer;
+        // opacity: .8;
+        transition: 0.4s ease-in-out;
+        &.disable {
+          opacity: 0.25;
+        }
+        &:hover {
+          padding: 2rem !important;
+          // opacity: 1;
+        }
+      }
+      .discount {
+        color: #fff;
+        background-color: #db4444;
+        border-radius: 5px;
+        left: 4%;
+        top: 4%;
+      }
+      .outils {
+        cursor: pointer;
+        top: 4%;
+        right: 4%;
+        span {
+          background-color: #fff;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+        .heart {
+          color: #000 !important;
+          &.clicked {
+            color: red !important;
+          }
+        }
+      }
+      .addCart {
+        background-color: #000;
+        border-radius: 0px !important;
+        color: #fff;
+        bottom: 0%;
+        left: 0%;
+        transform: translateY(100%);
+        display: none;
+        cursor: pointer;
+      }
+      &:hover {
+        .addCart {
+          display: block;
+          transform: translateY(0%);
+        }
+      }
+    }
+    .card-body {
+      .card-price {
+        span {
+          color: #db4444;
+        }
+        del {
+          color: #aaa;
+        }
+      }
+      .card-rate {
+        span {
+          color: #ffad33;
+        }
+        .rating {
+          color: #aaa;
+        }
+      }
+      .colors {
+        span {
+          cursor: pointer;
+          display: inline-block;
+          background-color: red;
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          transition: 0.1s linear;
+          &:hover {
+            border: 2px solid black;
+            padding: 9px;
+          }
+        }
+        .sec{
+          background-color: green;
+        }
+      }
+    }
+  }
+}
+
+// download button
+.download {
+  cursor: pointer;
+  border: 1.5px solid #fafafa;
+  border-radius: 10px;
+  color: #fff;
+  .title {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #db4444;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #db4444;
+  width: 14px;
+  border-radius: 4px;
+  height: 30px;
+  left: -2%;
+  top: -10%;
+}
+
+.arrow span {
+  background-color: #eee;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.arrow span:hover {
+  opacity: 0.8;
+}
+
+.mainBtn {
+  background-color: #db4444;
+  color: #fff !important;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.mainBtn:hover {
+  background-color: #db4444;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.product .card {
+  border: none !important;
+}
+.product .card .image {
+  height: 17rem;
+  background-color: #fff;
+  border: 2px solid #eee;
+  border-radius: 5px;
+}
+.product .card .image .card-img-top {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+  height: 15.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.product .card .image .card-img-top.disable {
+  opacity: 0.25;
+}
+.product .card .image .card-img-top:hover {
+  padding: 2rem !important;
+}
+.product .card .image .discount {
+  color: #fff;
+  background-color: #db4444;
+  border-radius: 5px;
+  left: 4%;
+  top: 4%;
+}
+.product .card .image .outils {
+  cursor: pointer;
+  top: 4%;
+  right: 4%;
+}
+.product .card .image .outils span {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.product .card .image .outils .heart {
+  color: #000 !important;
+}
+.product .card .image .outils .heart.clicked {
+  color: red !important;
+}
+.product .card .image .addCart {
+  background-color: #000;
+  border-radius: 0px !important;
+  color: #fff;
+  bottom: 0%;
+  left: 0%;
+  transform: translateY(100%);
+  display: none;
+  cursor: pointer;
+}
+.product .card .image:hover .addCart {
+  display: block;
+  transform: translateY(0%);
+}
+.product .card .card-body .card-price span {
+  color: #db4444;
+}
+.product .card .card-body .card-price del {
+  color: #aaa;
+}
+.product .card .card-body .card-rate span {
+  color: #ffad33;
+}
+.product .card .card-body .card-rate .rating {
+  color: #aaa;
+}
+.product .card .card-body .colors span {
+  cursor: pointer;
+  display: inline-block;
+  background-color: red;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: 0.1s linear;
+}
+.product .card .card-body .colors span:hover {
+  border: 2px solid black;
+  padding: 9px;
+}
+.product .card .card-body .colors .sec {
+  background-color: green;
+}
+
+.download {
+  cursor: pointer;
+  border: 1.5px solid #fafafa;
+  border-radius: 10px;
+  color: #fff;
+}
+.download .title {
+  opacity: 0.9;
+}
+
+.discount {
+  background-color: #000000;
+}
+.discount h2 {
+  color: rgba(250, 250, 250, 0.7803921569);
+}
+.discount h2 span {
+  color: #fff;
+  cursor: pointer;
+}
+.discount h2 span:hover {
+  opacity: 0.9;
+}
+.discount .language {
+  color: rgba(255, 255, 255, 0.8980392157);
+  opacity: 1;
+  cursor: pointer;
+}
+.discount .language:hover {
+  opacity: 0.9;
+}
+
+.navbar {
+  border-bottom: 1.5px solid #ddd;
+}
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid #ddd;
+}
+.navbar .navbar-collapse form .form-outline {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .navbar-collapse form .form-outline input {
+  background-color: #f5f5f5;
+  border: none;
+}
+.navbar .navbar-collapse form .form-outline input:focus {
+  box-shadow: none;
+}
+.navbar .navbar-collapse form .buttons span {
+  cursor: pointer;
+}
+.navbar .navbar-collapse form .buttons .like:hover {
+  color: red;
+}
+
+.home .aside {
+  border-right: 1.5px solid #ddd;
+}
+.home .aside span {
+  cursor: pointer;
+}
+.home .aside span:hover {
+  opacity: 0.8;
+}
+.home .aside span .angle {
+  right: 25%;
+}
+
+.flash .timing .time .days::before {
+  content: "Days";
+  position: absolute;
+  top: -15%;
+  left: 6%;
+  font-size: 11px;
+}
+.flash .timing .time .days::before {
+  content: "Days";
+  position: absolute;
+  top: -15%;
+  left: 6%;
+  font-size: 11px;
+}
+.flash .timing .time .hours::before {
+  content: "Hours";
+  position: absolute;
+  top: -15%;
+  left: 6%;
+  font-size: 11px;
+}
+.flash .timing .time .minutes::before {
+  content: "Minutes";
+  position: absolute;
+  top: -15%;
+  left: 6%;
+  font-size: 11px;
+}
+.flash .timing .time .seconds::before {
+  content: "Seconds";
+  position: absolute;
+  top: -15%;
+  left: 6%;
+  font-size: 11px;
+}
+
+.box {
+  border: 1.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.box:hover {
+  background-color: #db4444;
+  color: #fff;
+}
+.box.active {
+  background-color: #db4444;
+  color: #fff;
+}
+
+.swiperImage .image .categories {
+  color: #00ff66;
+  top: 15%;
+  left: 5%;
+}
+.swiperImage .image .center {
+  top: 25%;
+  left: 5%;
+}
+.swiperImage .image .center .desc {
+  color: white;
+}
+.swiperImage .image .center ul li {
+  background-color: #fff;
+  font-size: 9px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+}
+.swiperImage .butt {
+  bottom: 23%;
+  left: 5%;
+}
+
+.services .service .icon {
+  background-color: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 8px solid #aaa;
+}
+.services .service .desc {
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+.footer ul li {
+  cursor: pointer;
+}
+.footer ul li:hover {
+  opacity: 0.82;
+}
+.footer .socials span {
+  cursor: pointer;
+}
+.footer .socials span:hover {
+  opacity: 0.9;
+}
+.footer .socials .copyright {
+  border-top: 2px solid rgba(255, 255, 255, 0.35) !important;
+}
+
+.cart .card .card-body {
+  box-shadow: 0 3px 9px 0px #aaa;
+}
+.cart .card .card-body .del {
+  top: 5%;
+  left: 2%;
+  background-color: #db4444;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.cart .card .card-body .del:hover {
+  opacity: 1;
+}
+.cart .helpers .return {
+  border: 1.8px solid #aaa;
+  box-shadow: 0 1px 3px 0 #aaa;
+}
+.cart .helpers .total {
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 #aaa;
+}
+.cart .helpers .total .line {
+  border-bottom: 2px solid #ddd;
+}
+.cart .helpers .total .line h1 {
+  color: #474646;
+}/*# sourceMappingURL=style.css.map */
