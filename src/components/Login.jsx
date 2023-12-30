@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import Input from './helpers/Input';
 import shop1 from '../assets/images/shop6.png'
+import { FaFacebookF } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+import { SiInstagram } from "react-icons/si";
+
 
 const Login = () => {
     return (
@@ -18,7 +22,7 @@ const Login = () => {
                             <h1 className="fs-2 mb-2 w-bold">Log in to Exclusive</h1>
                             <h1 className="fs-6 mb-4">Enter your details below</h1>
 
-                            <form action="GET">
+                            <form action="GET" className="mb-4">
                                 <div className="inputs mt- d-flex flex-column">
                                     <Input type="email" ariaDesc="emailHelp" ph="email or phone number" />
                                     <Input type="password" ariaDesc="passwordHelp" ph="password" />
@@ -31,6 +35,25 @@ const Login = () => {
                                     </Link>
                                 </div>
                             </form>
+
+                            <span className="or position-relative p-0 mb-4 d-flex justify-content-center align-items-center m-auto fw-bold">
+                                <b className="d-flex justify-content-center align-items-center "> or</b>
+                            </span>
+
+                            <div className="social mt-0 d-flex justify-content-center align-items-center">
+                                <Link className="fb fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
+                                    <FaFacebookF />
+                                </Link>
+                                <Link className="insta fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
+                                    <SiInstagram />
+                                </Link>
+                                <Link className="linke fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
+                                    <FaLinkedinIn />
+                                </Link>
+                                <Link className="twitter fw-bold fs-5 d-flex justify-content-center align-items-center">
+                                    <FaTwitter />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>

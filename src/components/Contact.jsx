@@ -1,8 +1,10 @@
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="contact mt-5 mb-5">
+            <div className="container">
+
+            </div>
         </div>
     )
 }
