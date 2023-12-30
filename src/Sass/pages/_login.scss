@@ -1,0 +1,20 @@
+.login {
+  img{
+    border-radius: 5px;
+  }
+  .buttons {
+    .submit {
+      background-color: #457CA0;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+    .forget {
+      font-weight: 500;
+      opacity: 0.7;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
