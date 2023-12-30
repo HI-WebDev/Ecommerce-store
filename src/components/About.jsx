@@ -9,6 +9,17 @@ import emp2 from '../assets/images/emp2.png'
 import emp3 from '../assets/images/emp3.png'
 import Services from './Services';
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { FreeMode, Pagination } from 'swiper/modules';
+
 const About = () => {
     return (
         <div className="about mt-5 mb-5 ">
@@ -17,7 +28,7 @@ const About = () => {
                     <span className="text-muted">Home</span> / About
                 </h3>
 
-                <div className="row mt-5 d-flex align-items-center">
+                <div className="row mt-5 mb-5 pb-5 d-flex align-items-center">
                     <div className="col-6">
                         <div className='pe-5'>
                             <h1 className=" fw-bold text-capitalize mb-4 ">our story</h1>
@@ -41,7 +52,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="row mt-5 ">
+                <div className="row mt-5 pt-5 pb-5 mb-5">
                     <div className="col-3">
                         <Service bord="1.5px solid #aaa"
                             anim="animate"
@@ -75,34 +86,77 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="row mt-5 ">
-                    <div className="col-4">
-                        <EmployerCard
-                            img={emp1}
-                            alt="employer 1"
-                            title="Houssini Ismail"
-                            desc="Founder & Developer"
-                        />
-                    </div>
-                    <div className="col-4">
-                        <EmployerCard
-                            img={emp2}
-                            alt="employer 2"
-                            title="Houssini Ismail"
-                            desc="Marketing & SEO"
-                        />
-                    </div>
-                    <div className="col-4">
-                        <EmployerCard
-                            img={emp3}
-                            alt="employer 3"
-                            title="Houssini Ismail"
-                            desc="Website Designer"
-                        />
-                    </div>
+                <div className="row mt-5 pt-5 pb-5 mb-5">
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={30}
+                        freeMode={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[FreeMode, Pagination]}
+                        className="mySwiper"
+                    >
+
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp1}
+                                alt="employer 1"
+                                title="Houssini Ismail"
+                                desc="Founder & Developer"
+                            />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp2}
+                                alt="employer 2"
+                                title="Houssini Ismail"
+                                desc="Marketing & SEO"
+                            />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp3}
+                                alt="employer 3"
+                                title="Houssini Ismail"
+                                desc="Website Designer"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp1}
+                                alt="employer 1"
+                                title="Houssini Ismail"
+                                desc="Founder & Developer"
+                            />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp2}
+                                alt="employer 2"
+                                title="Houssini Ismail"
+                                desc="Marketing & SEO"
+                            />
+                        </SwiperSlide>
+
+                        <SwiperSlide className='d-flex justify-content-center'>
+                            <EmployerCard
+                                img={emp3}
+                                alt="employer 3"
+                                title="Houssini Ismail"
+                                desc="Website Designer"
+                            />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
 
-                <Services />
+                <div className="pb-4">
+                    <Services />
+                </div>
+
             </div>
         </div>
     )

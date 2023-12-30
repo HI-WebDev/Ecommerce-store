@@ -39,7 +39,7 @@ body {
 //main button
 .mainBtn {
   background-color: #db4444;
-  color: #fff !important;
+  color: #fff;
   cursor: pointer;
   border-radius: 4px;
   &:hover {
@@ -187,7 +187,7 @@ body {
 //service box animate
 .service.animate {
   cursor: pointer;
-  transition: .4s linear;
+  transition: 0.4s linear;
   .icon {
     background-color: #000;
     color: #fff;
@@ -198,18 +198,67 @@ body {
   }
   .desc {
     font-weight: 500;
-    transition: .4s linear;
+    transition: 0.4s linear;
   }
-  &:hover{
+  &:hover {
     background-color: #db4444;
     color: #fff !important;
   }
-  &:hover .icon{
+  &:hover .icon {
     background-color: #fff;
     color: #000;
     border: 8px solid #dddddd83;
   }
-  &:hover .desc{
+  &:hover .desc {
     color: #fff;
+  }
+}
+
+//mainInput (sign and login)
+.form-control.mainInput {
+  border: none;
+  border-bottom: 1.8px solid #aaa;
+  border-radius: 0;
+  color: #000;
+  font-weight:500;
+  &:focus {
+    box-shadow: none;
+    border-color: #aaa;
+  }
+
+  &::-webkit-input-placeholder {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.6;
+    margin-left: 0;
+  }
+  &::-moz-placeholder {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.6;
+    margin-left: 0;
+  }
+  &:-ms-input-placeholder {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.6;
+    margin-left: 0;
+  }
+  &::-ms-input-placeholder {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #000;
+    opacity: 0.6;
+    margin-left: 0;
+  }
+
+  &::placeholder {
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #00000080;
+
   }
 }

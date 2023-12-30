@@ -35,7 +35,7 @@ body {
 
 .mainBtn {
   background-color: #db4444;
-  color: #fff !important;
+  color: #fff;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -186,6 +186,30 @@ body {
 }
 .service.animate:hover .desc {
   color: #fff;
+}
+
+.form-control.mainInput {
+  border: none;
+  border-bottom: 1.8px solid #aaa;
+  border-radius: 0;
+  color: #000;
+  font-weight: 500;
+}
+.form-control.mainInput:focus {
+  box-shadow: none;
+  border-color: #aaa;
+}
+.form-control.mainInput::-moz-placeholder {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.6;
+  margin-left: 0;
+}
+.form-control.mainInput::placeholder {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 
 .discount {
@@ -378,6 +402,9 @@ body {
   color: #000;
   font-family: "Poppins", sans-serif;
 }
+.about .swiper-wrapper {
+  margin-bottom: 2rem !important;
+}
 
 .CardEmployer .card {
   width: 18rem;
@@ -385,4 +412,16 @@ body {
 }
 .CardEmployer .card img {
   height: 18rem;
+}
+
+.sign .buttons .gg {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.sign .toLogin {
+  color: rgba(0, 0, 0, 0.5607843137);
+  font-weight: 600;
+}
+.sign .toLogin a {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
