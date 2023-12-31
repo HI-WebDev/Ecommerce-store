@@ -136,7 +136,7 @@ const Cart = () => {
                                             </div>
                                             <div className="last mt-4 mb-4 d-flex justify-content-between align-items-center">
                                                 <h1 className="fs-6 fw-bold text-capitalize">total:</h1>
-                                                <h1 className="fs-6 fw-bold text-capitalize">${total}</h1>
+                                                <h1 className="fs-6 fw-bold text-capitalize">${total.toFixed(2)}</h1>
                                             </div>
                                             <div className="text-center mb-1">
                                                 <Button title="Procees to checkout" />

@@ -5,8 +5,8 @@ import { useEffect, useState } from "react";
 import { fetchProducts } from "../rtk/products/productSlice";
 import { addToCart } from '../rtk/cart/cartSlice'
 import { useDispatch, useSelector } from "react-redux";
-import { FaHeart, FaRegHeart, FaStar } from "react-icons/fa";
-import { IoIosEyeOff, IoMdEye } from "react-icons/io";
+import { FaHeart, FaStar } from "react-icons/fa";
+import { IoMdEye } from "react-icons/io";
 
 const FlashSales = () => {
     //flash date
@@ -50,17 +50,17 @@ const FlashSales = () => {
     }, [dispatch])
 
     //handle click 
-    const [isActive, setActive] = useState(false);
-    const [isActive2, setActive2] = useState(false);
+    // const [isActive, setActive] = useState(false);
+    // const [isActive2, setActive2] = useState(false);
     const [isClicked, setClicked] = useState(false);
 
-    const handleClick = () => {
-        setActive(!isActive)
-    }
+    // const handleClick = () => {
+    //     setActive(!isActive)
+    // }
 
-    const handleClick2 = () => {
-        setActive2(!isActive2)
-    }
+    // const handleClick2 = () => {
+    //     setActive2(!isActive2)
+    // }
 
     const handleClicked = () => {
         setClicked(!isClicked)
@@ -89,20 +89,16 @@ const FlashSales = () => {
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">
-                                            <img src={product.image} className={isActive2 ? "card-img-top disable p-5" : "card-img-top p-5"}
-                                                alt="product1" />
+                                            <img src={product.image} className="card-img-top p-5" alt="product1" />
                                             <span className="discount position-absolute pt-1 pb-1 ps-2 pe-2" >
                                                 New
                                             </span>
                                             <div className="outils d-flex flex-column position-absolute">
-                                                <span className={isActive ? "heart clicked d-flex justify-content-center align-items-center mb-2"
-                                                    : "heart  d-flex justify-content-center align-items-center mb-2"}
-                                                    onClick={handleClick}>
-                                                    {isActive ? <FaHeart /> : <FaRegHeart />}
+                                                <span className="heart  d-flex justify-content-center align-items-center mb-2">
+                                                    <FaHeart />
                                                 </span>
-                                                <span className="d-flex fs-5 justify-content-center align-items-center"
-                                                    onClick={handleClick2}>
-                                                    {isActive2 ? <IoIosEyeOff /> : <IoMdEye />}
+                                                <span className="d-flex fs-5 justify-content-center align-items-center">
+                                                    <IoMdEye />
                                                 </span>
                                             </div>
                                             <div className="addCart btn position-absolute w-100 text-center pt-2 pb-1" >
@@ -127,10 +123,10 @@ const FlashSales = () => {
                                                 </p>
                                             </div>
 
-                                            <div className={`colors position-absolute`}>
+                                            {/* <div className={`colors position-absolute`}>
                                                 <span className="me-2">{product.rating.count >= 200 ? "" : null}</span>
                                                 <span className="sec">{product.rating.count >= 200 ? "" : null}</span>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -142,20 +138,16 @@ const FlashSales = () => {
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">
-                                            <img src={product.image} className={isActive2 ? "card-img-top disable p-5" : "card-img-top p-5"}
-                                                alt="product1" />
+                                            <img src={product.image} className="card-img-top p-5" alt="product1" />
                                             <span className="discount position-absolute pt-1 pb-1 ps-2 pe-2" >
                                                 New
                                             </span>
                                             <div className="outils d-flex flex-column position-absolute">
-                                                <span className={isActive ? "heart clicked d-flex justify-content-center align-items-center mb-2"
-                                                    : "heart  d-flex justify-content-center align-items-center mb-2"}
-                                                    onClick={handleClick}>
-                                                    {isActive ? <FaHeart /> : <FaRegHeart />}
+                                                <span className="heart  d-flex justify-content-center align-items-center mb-2">
+                                                    <FaHeart />
                                                 </span>
-                                                <span className="d-flex fs-5 justify-content-center align-items-center"
-                                                    onClick={handleClick2}>
-                                                    {isActive2 ? <IoIosEyeOff /> : <IoMdEye />}
+                                                <span className="d-flex fs-5 justify-content-center align-items-center">
+                                                    <IoMdEye />
                                                 </span>
                                             </div>
                                             <div className="addCart btn position-absolute w-100 text-center pt-2 pb-1" >
@@ -179,11 +171,11 @@ const FlashSales = () => {
                                                     <span className="rating fw-bold">({product.rating.count})</span>
                                                 </p>
                                             </div>
-
+{/* 
                                             <div className={`colors position-absolute`}>
                                                 <span className="me-2">{product.rating.count >= 200 ? "" : null}</span>
                                                 <span className="sec">{product.rating.count >= 200 ? "" : null}</span>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
