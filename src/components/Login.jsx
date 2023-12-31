@@ -2,8 +2,9 @@ import { Link } from "react-router-dom"
 import Input from './helpers/Input';
 import shop1 from '../assets/images/shop6.png'
 import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
-import { SiInstagram } from "react-icons/si";
+import { FcGoogle } from "react-icons/fc";
+// import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
+// import { SiInstagram } from "react-icons/si";
 
 
 const Login = () => {
@@ -41,18 +42,18 @@ const Login = () => {
                             </span>
 
                             <div className="social mt-0 d-flex justify-content-center align-items-center">
-                                <Link className="fb fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
+                                <Link className="fb fw-bold me-4 fs-4 d-flex justify-content-center align-items-center">
                                     <FaFacebookF />
                                 </Link>
-                                <Link className="insta fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
-                                    <SiInstagram />
+                                <Link className="gogle fw-bold me- fs-4 d-flex justify-content-center align-items-center">
+                                    <FcGoogle />
                                 </Link>
-                                <Link className="linke fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
+                                {/* <Link className="linke fw-bold me-4 fs-5 d-flex justify-content-center align-items-center">
                                     <FaLinkedinIn />
                                 </Link>
                                 <Link className="twitter fw-bold fs-5 d-flex justify-content-center align-items-center">
                                     <FaTwitter />
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     </div>

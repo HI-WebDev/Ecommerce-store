@@ -52,6 +52,7 @@
       height: 35px;
       cursor: pointer;
       color: #fff;
+      box-shadow: 0px 0px 4px #aaa;
       &:hover {
         opacity: 0.8;
       }
@@ -60,14 +61,18 @@
     .fb {
       background-color: #1877f2;
     }
-    .insta {
-      background-color: #fd1d1d;
+    .gogle{
+      background-color:#fafafa ;
     }
-    .linke {
-      background-color: #0a66c2;
-    }
-    .twitter {
-      background-color: #1da1f2;
-    }
+    
+    // .insta {
+    //   background-color: #fd1d1d;
+    // }
+    // .linke {
+    //   background-color: #0a66c2;
+    // }
+    // .twitter {
+    //   background-color: #1da1f2;
+    // }
   }
 }

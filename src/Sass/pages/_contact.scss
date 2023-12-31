@@ -1,3 +1,83 @@
-.contact{
-    
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&family=Roboto&display=swap");
+
+.contact {
+  .infoContact {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 1px 13px 0 rgb(0, 0, 0, 5%);
+    .phone {
+      .icon {
+        background-color: #db4444;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+        border-radius: 50%;
+      }
+    }
+    .email {
+      .icon {
+        background-color: #db4444;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .form {
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 1px 13px 0 rgb(0, 0, 0, 5%);
+    .infos {
+      input {
+        background-color: #f5f5f5;
+        border: none;
+        color: #000;
+
+        &::-webkit-input-placeholder {
+          color: #000;
+          font-weight: 400;
+        }
+        &::-moz-placeholder {
+          color: #000;
+          font-weight: 400;
+        }
+        &:-ms-input-placeholder {
+          color: #000;
+          font-weight: 400;
+        }
+        &::-ms-input-placeholder {
+          color: #000;
+          font-weight: 400;
+        }
+        &::placeholder {
+          color: #000;
+          font-weight: 400;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .message {
+      background-color: #f5f5f5;
+      border: none;
+      color: #000;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .send {
+      background-color: #db4444;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      display: flex;
+      align-self: flex-end;
+    }
+  }
 }
