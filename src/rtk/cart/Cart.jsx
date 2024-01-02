@@ -37,38 +37,6 @@ const Cart = () => {
                                 </div>
                             </div>
 
-                            {/* header */}
-                            {/* <div className={cart.length >= 1 ? "header d-block mb-2" : "header d-none"}>
-                                <div className="row d-flex align-items-center">
-                                    <div className="col-lg-2 ps-0 text-center">
-                                        <h5 className="mb-0 fs-6 fw-bold">product</h5>
-                                    </div>
-                                    <div className="col-lg-3 d-flex ps-0 fw-bold ">
-                                        <p className="lead fw-normal mb-2">title</p>
-                                    </div>
-
-                                    <div className="col-lg-2 offset-lg-1 ps-0 d-flex fw-bold ">
-                                        <h5 className="mb-0 fs-6 fw-bold">price</h5>
-                                    </div>
-
-                                    <div className="col-lg-1 d-flex fw-bold ps-0 ">
-                                        quantity
-                                    </div>
-
-                                    <div className="col-lg-1 offset-lg-1 ps-0 d-flex fw-bold">
-                                        <h5 className="mb-0 fs-6 fw-bold">subtotal</h5>
-                                    </div>
-
-
-                                    <div className="col-lg-1 text-center ps-0 ">
-                                        <a href="#!" className=" text-decoration-none text-danger fs-5">
-                                            #
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div> */}
-
 
                             {cart.map((product) => {
                                 return (
@@ -123,8 +91,7 @@ const Cart = () => {
                                     </div>
 
                                     <div className="col-5">
-                                        <div className={cart.length >= 1 ? "total p-3 pt-3 pb-4"
-                                            : "d-none"}>
+                                        <div className={cart.length >= 1 ? "total p-3 pt-3 pb-4" : "d-none"}>
                                             <h1 className="fs-4 mb-3 text-capitalize">cart total</h1>
                                             <div className="line pb-2 d-flex justify-content-between align-items-center">
                                                 <h1 className="fs-6 fw-bold text-capitalize">subtotal:</h1>
@@ -138,9 +105,9 @@ const Cart = () => {
                                                 <h1 className="fs-6 fw-bold text-capitalize">total:</h1>
                                                 <h1 className="fs-6 fw-bold text-capitalize">${total.toFixed(2)}</h1>
                                             </div>
-                                            <div className="text-center mb-1">
+                                            <Link className="text-center text-decoration-none d-flex justify-content-center" to="/cart/checkout">
                                                 <Button title="Procees to checkout" />
-                                            </div>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

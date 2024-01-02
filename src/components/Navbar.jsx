@@ -13,6 +13,7 @@ const Navbar = () => {
     //     setActive(!active)
     // }
     const cart = useSelector((state) => state.cart);
+    const wishlist = useSelector((state) => state.wishList)
 
     return (
         <>
@@ -64,10 +65,11 @@ const Navbar = () => {
                                 <FontAwesomeIcon className='ms-2' icon={faMagnifyingGlass} />
                                 <input className="form-control " type="search" placeholder="Search for products" aria-label="Search" />
                             </div>
-                            <div className="buttons d-flex align-items-center ms-3">
-                                <span className="like me-2">
+                            <div className="buttons d-flex align-items-center  ms-3">
+                                <Link className="like me-2 text-decoration-none text-black" to="/wishlist">
                                     <FontAwesomeIcon icon={faHeart} />
-                                </span>
+                                    <span className='ms-1'>({wishlist.length})</span>
+                                </Link>
                                 <Link className="cart ms-1 text-decoration-none text-black" to='/cart'>
                                     <FontAwesomeIcon icon={faCartShopping} />
                                     <span className='ms-1'>({cart.length})</span>

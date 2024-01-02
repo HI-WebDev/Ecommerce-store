@@ -7,11 +7,12 @@ import { addToCart } from '../rtk/cart/cartSlice'
 import { useDispatch, useSelector } from "react-redux";
 import { FaHeart, FaStar } from "react-icons/fa";
 import { IoMdEye } from "react-icons/io";
+import { addToWishList } from "../rtk/wishList/wishListSlice"
 
 const FlashSales = () => {
     //flash date
     const calculateTimeLeft = () => {
-        const targetDate = new Date("2023-12-31").getTime();
+        const targetDate = new Date("2024-12-31").getTime();
         const now = new Date().getTime();
         const difference = targetDate - now;
 
@@ -94,7 +95,8 @@ const FlashSales = () => {
                                                 New
                                             </span>
                                             <div className="outils d-flex flex-column position-absolute">
-                                                <span className="heart  d-flex justify-content-center align-items-center mb-2">
+                                                <span className="heart  d-flex justify-content-center align-items-center mb-2"
+                                                    onClick={() => dispatch(addToWishList(product))}>
                                                     <FaHeart />
                                                 </span>
                                                 <span className="d-flex fs-5 justify-content-center align-items-center">
@@ -135,7 +137,7 @@ const FlashSales = () => {
                         ))}
                         {fiveProducts.map((product) => (
                             <div key={product.id} className={isClicked ? "col" : "col d-none"}>
-                                <div className={`product `}>
+                                <div className={`product`}>
                                     <div className="card">
                                         <div className="image position-relative">
                                             <img src={product.image} className="card-img-top p-5" alt="product1" />
@@ -143,7 +145,8 @@ const FlashSales = () => {
                                                 New
                                             </span>
                                             <div className="outils d-flex flex-column position-absolute">
-                                                <span className="heart  d-flex justify-content-center align-items-center mb-2">
+                                                <span className="heart  d-flex justify-content-center align-items-center mb-2"
+                                                    onClick={() => dispatch(addToWishList(product))}>
                                                     <FaHeart />
                                                 </span>
                                                 <span className="d-flex fs-5 justify-content-center align-items-center">
@@ -171,7 +174,7 @@ const FlashSales = () => {
                                                     <span className="rating fw-bold">({product.rating.count})</span>
                                                 </p>
                                             </div>
-{/* 
+                                            {/* 
                                             <div className={`colors position-absolute`}>
                                                 <span className="me-2">{product.rating.count >= 200 ? "" : null}</span>
                                                 <span className="sec">{product.rating.count >= 200 ? "" : null}</span>

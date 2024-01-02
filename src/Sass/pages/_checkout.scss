@@ -1,0 +1,65 @@
+.checkout {
+  .infos {
+    input {
+      border: none;
+      border-radius: 4px;
+      background-color: #f5f5f5;
+    }
+    .form-check-input {
+      background-color: #f5f5f5;
+      border: 1px solid black;
+      cursor: pointer;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .form-check-input:checked {
+      background-color: #db4444;
+      border: none;
+    }
+  }
+  .payment {
+    .line {
+      border-bottom: 2px solid #ddd;
+      h1 {
+        color: #474646;
+      }
+    }
+    .bank {
+      input {
+        cursor: pointer;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .coupon {
+      input {
+        border: 1px solid #000;
+        border-radius: 4px;
+
+        &::-webkit-input-placeholder {
+          font-weight: 600;
+          padding-left: 0.5rem;
+        }
+        &::-moz-placeholder {
+          font-weight: 600;
+          padding-left: 0.5rem;
+        }
+        &:-ms-input-placeholder {
+          font-weight: 600;
+          padding-left: 0.5rem;
+        }
+        &::-ms-input-placeholder {
+          font-weight: 600;
+          padding-left: 0.5rem;
+        }
+        &::placeholder {
+          font-weight: 600;
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
