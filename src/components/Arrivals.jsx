@@ -22,7 +22,7 @@ const Arrivals = () => {
                 <Header title='Featured' />
                 <h1 className="fs-3 fw-bold mt-0 mb-5">New Arrival</h1>
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-12 col-lg-6 mb-2 mb-lg-0">
                         {/* first swiper */}
                         <Swiper
                             spaceBetween={30}
@@ -50,7 +50,7 @@ const Arrivals = () => {
                         </Swiper>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-12 col-lg-6">
                         <div className="image d-flex flex-column">
                             {/* second swiper */}
                             <div className="second">
@@ -81,7 +81,7 @@ const Arrivals = () => {
                             </div>
 
                             {/* three and four swiper */}
-                            <div className="three d-flex justify-content-between mt-3">
+                            <div className="three d-flex justify-content-between mt-2 mt-lg-3">
                                 <Swiper
                                     spaceBetween={30}
                                     centeredSlides={true}

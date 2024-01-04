@@ -16,13 +16,13 @@ const OurProducts = () => {
         <div className="ourProducts mt-5 mb-5">
             <div className="container">
                 <Header title='Our Products' />
-                <div className="d-flex justify-content-between align-items-center mt-3">
+                <div className="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center mt-3">
                     <h1 className="fs-3 fw-bold">Explore Our Products</h1>
                     <Arrows />
                 </div>
 
                 <div className="row mt-5 mb-5">
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             display='d-none'
@@ -36,7 +36,7 @@ const OurProducts = () => {
                             count='88'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             display='d-none'
@@ -50,7 +50,7 @@ const OurProducts = () => {
                             count='88'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             display='d-none'
@@ -64,7 +64,7 @@ const OurProducts = () => {
                             count='88'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             display='d-none'
@@ -81,9 +81,7 @@ const OurProducts = () => {
                 </div>
 
                 <div className={isClicked ? "row mb-5" : "row d-none mb-5"}>
-
-
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             bg='#00FF66'
@@ -101,7 +99,7 @@ const OurProducts = () => {
                             color2='#000000'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             bg='#db4444'
@@ -119,7 +117,7 @@ const OurProducts = () => {
                             color2='#000000'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             bg='#db4444'
@@ -137,7 +135,7 @@ const OurProducts = () => {
                             color2='#000000'
                         />
                     </div>
-                    <div className="col-3">
+                    <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
                             bg='#00FF66'
