@@ -253,8 +253,17 @@ body {
 .navbar .navbar-collapse form .buttons span {
   cursor: pointer;
 }
-.navbar .navbar-collapse form .buttons .like:hover {
+.navbar .navbar-collapse form .buttons .like svg {
+  font-size: 19px;
+}
+.navbar .navbar-collapse form .buttons .like svg:hover {
   color: red;
+}
+.navbar .navbar-collapse form .buttons .cart svg {
+  font-size: 19px;
+}
+.navbar .navbar-collapse form .buttons .cart svg:hover {
+  color: rgb(0, 89, 255);
 }
 
 .home .aside {
@@ -321,6 +330,9 @@ body {
   color: #fff;
 }
 
+.swiperImage .image {
+  height: 500px;
+}
 .swiperImage .image .categories {
   color: #00ff66;
   top: 15%;

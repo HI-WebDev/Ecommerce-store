@@ -17,7 +17,7 @@ import { useEffect, useState } from 'react';
 const SwiperImage = () => {
     //flash date
     const calculateTimeLeft = () => {
-        const targetDate = new Date("2023-12-31").getTime();
+        const targetDate = new Date("2024-2-30").getTime();
         const now = new Date().getTime();
         const difference = targetDate - now;
 

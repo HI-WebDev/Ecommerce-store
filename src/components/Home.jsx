@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-import image from '../assets/images/Untitled design (7).png';
-import image2 from '../assets/images/Untitled design (8).png';
-import image3 from '../assets/images/PLAY STATION 5 (2).png';
-// import image4 from '../assets/images/PLAY STATION 5 (2).png';
-import image5 from '../assets/images/hero.png';
+import image from '../assets/images/parfum.jpg';
+import image2 from '../assets/images/ps5.jpg';
+import image3 from '../assets/images/psp.png';
+import image5 from '../assets/images/pc.jpg';
+import image6 from '../assets/images/ip15.webp';
 import Arrivals from "./Arrivals"
 import Browse from "./Browse"
 import FlashSales from "./FlashSales"
@@ -73,17 +73,20 @@ const Home = () => {
                   modules={[Autoplay]}
                   className="mySwiper"
                 >
-                  <SwiperSlide>
-                    <img src={image} alt="hero" />
+                  <SwiperSlide style={{ height: "344px" }}>
+                    <img className='img-fluid' src={image} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={image2} alt="hero" />
+                  <SwiperSlide style={{ height: "344px" }}>
+                    <img className='img-fluid' src={image2} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={image3} alt="hero" />
+                  <SwiperSlide style={{ height: "344px" }}>
+                    <img className='img-fluid' src={image3} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide>
-                    <img src={image5} alt="hero" />
+                  <SwiperSlide style={{ height: "344px" }}>
+                    <img className='img-fluid' src={image5} alt="hero" />
+                  </SwiperSlide>
+                  <SwiperSlide style={{ height: "344px"}}>
+                    <img className='img-fluid' src={image6} alt="hero" />
                   </SwiperSlide>
                 </Swiper>
               </div>

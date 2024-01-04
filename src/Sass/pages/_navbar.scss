@@ -59,8 +59,19 @@
           cursor: pointer;
         }
         .like {
-          &:hover {
-            color: red;
+          svg {
+            font-size: 19px;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+        .cart {
+          svg {
+            font-size: 19px;
+            &:hover {
+              color: rgb(0, 89, 255);
+            }
           }
         }
       }

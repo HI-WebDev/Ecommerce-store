@@ -90,7 +90,8 @@ const FlashSales = () => {
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">
-                                            <img src={product.image} className="card-img-top p-5" alt="product1" />
+                                            <img src={product.image} className="card-img-top p-5" alt="product1"
+                                                onClick="" />
                                             <span className="discount position-absolute pt-1 pb-1 ps-2 pe-2" >
                                                 New
                                             </span>

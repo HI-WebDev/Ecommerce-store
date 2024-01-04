@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import {  faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { FiHeart, FiShoppingCart } from "react-icons/fi";
+
 import { useSelector } from 'react-redux'
 // import Home from './Home'
 import { Link } from 'react-router-dom'
@@ -41,7 +43,7 @@ const Navbar = () => {
             </div>
             <nav className="navbar sticky  navbar-expand-lg navbar-light pt-3">
                 <div className="container">
-                    <a className="navbar-brand fw-bold" href="#">HI-ECOMMERCE</a>
+                    <a className="navbar-brand fw-bold" href="/home">HI-ECOMMERCE</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -66,12 +68,12 @@ const Navbar = () => {
                                 <input className="form-control " type="search" placeholder="Search for products" aria-label="Search" />
                             </div>
                             <div className="buttons d-flex align-items-center  ms-3">
-                                <Link className="like me-2 text-decoration-none text-black" to="/wishlist">
-                                    <FontAwesomeIcon icon={faHeart} />
+                                <Link className="like fs-6 me-2 text-decoration-none text-black" to="/wishlist">
+                                    <FiHeart />
                                     <span className='ms-1'>({wishlist.length})</span>
                                 </Link>
                                 <Link className="cart ms-1 text-decoration-none text-black" to='/cart'>
-                                    <FontAwesomeIcon icon={faCartShopping} />
+                                    <FiShoppingCart />
                                     <span className='ms-1'>({cart.length})</span>
                                 </Link>
                             </div>
