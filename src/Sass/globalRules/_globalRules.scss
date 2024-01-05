@@ -10,15 +10,11 @@ body {
 //header in chaque component
 .header {
   color: #db4444;
-  &::before {
-    content: "";
-    position: absolute;
+  .before {
     background-color: #db4444;
-    width: 14px;
-    border-radius: 4px;
+    width: 12px;
+    border-radius: 3px;
     height: 30px;
-    left: -2%;
-    top: -10%;
   }
 }
 

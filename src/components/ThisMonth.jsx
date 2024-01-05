@@ -35,16 +35,16 @@ const ThisMonth = () => {
         <div className="month mt-5 mb-5">
             <div className="container">
                 <Header title='This Month' />
-                <div className="d-flex align-items-center justify-content-between">
-                    <h1 className="fs-2 fw-bold">Best Selling Products</h1>
+                <div className="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <h1 className="fs-2 fw-bold text-center mb-3 mb-lg-0">Best Selling Products</h1>
                     <Button title={isClicked ? "View Less" : "View All"} funct={handleClicked} />
                 </div>
                 {fourProducts.loading && <h1>Loading...</h1>}
 
                 {!fourProducts.loading && fourProducts.length ? (
-                    <div className="row mt-5">
+                    <div className="row mt-4 mt-lg-5">
                         {fourProducts.map((product) => (
-                            <div key={product.id} className="col">
+                            <div key={product.id} className="col-12 col-lg-3">
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">

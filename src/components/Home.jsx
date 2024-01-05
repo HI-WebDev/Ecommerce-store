@@ -7,10 +7,10 @@ import image5 from '../assets/images/pc.jpg';
 import image6 from '../assets/images/ip15.webp';
 import Arrivals from "./Arrivals"
 import Browse from "./Browse"
-import FlashSales from "./FlashSales"
+// import FlashSales from "./FlashSales"
 import OurProducts from "./OurProducts"
 import Services from "./Services"
-import SwiperImage from "./SwiperImage"
+// import SwiperImage from "./SwiperImage"
 import ThisMonth from "./ThisMonth"
 
 
@@ -95,10 +95,10 @@ const Home = () => {
         </div>
       </div>
 
-      <FlashSales />
+      {/* <FlashSales /> */}
       <Browse />
       <ThisMonth />
-      <SwiperImage />
+      {/* <SwiperImage /> */}
       <OurProducts />
       <Arrivals />
       <Services />

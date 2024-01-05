@@ -20,7 +20,7 @@ const Arrivals = () => {
         <div className="arrivals mt-5 mb-5">
             <div className="container">
                 <Header title='Featured' />
-                <h1 className="fs-3 fw-bold mt-0 mb-5">New Arrival</h1>
+                <h1 className="fs-3 fw-bold mt-0 mb-4 mb-lg-5 text-center text-lg-start">New Arrival</h1>
                 <div className="row">
                     <div className="col-12 col-lg-6 mb-2 mb-lg-0">
                         {/* first swiper */}

@@ -12,15 +12,11 @@ body {
 .header {
   color: #db4444;
 }
-.header::before {
-  content: "";
-  position: absolute;
+.header .before {
   background-color: #db4444;
-  width: 14px;
-  border-radius: 4px;
+  width: 12px;
+  border-radius: 3px;
   height: 30px;
-  left: -2%;
-  top: -10%;
 }
 
 .arrow span {

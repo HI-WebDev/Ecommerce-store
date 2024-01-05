@@ -62,7 +62,7 @@ const Navbar = () => {
                                 <Link className="nav-link fw-bold" to="/sign">Sign Up</Link>
                             </li>
                         </ul>
-                        <form className="d-flex">
+                        <form className="d-flex justify-content-between justify-content-lg-start">
                             <div className="form-outline d-flex align-items-center">
                                 <FontAwesomeIcon className='ms-2' icon={faMagnifyingGlass} />
                                 <input className="form-control " type="search" placeholder="Search for products" aria-label="Search" />

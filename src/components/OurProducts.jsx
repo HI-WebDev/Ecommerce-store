@@ -21,7 +21,7 @@ const OurProducts = () => {
                     <Arrows />
                 </div>
 
-                <div className="row mt-5 mb-5">
+                <div className="row mt-4 mt-lg-5 mb-5">
                     <div className="col-12 col-lg-3">
                         <MainProduct
                             img={pro1}
