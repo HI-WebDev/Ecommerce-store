@@ -11,14 +11,14 @@ const Login = () => {
     return (
         <div className="login mt-5 mb-5">
             <div className="container">
-                <div className="row d-flex align-items-center">
-                    <div className="col-6 me-5">
+                <div className="row d-flex justify-content-between align-items-center">
+                    <div className="col-12 col-lg-6">
                         <div className="image">
                             <img src={shop1} alt="shoping online" className="img-fluid" />
                         </div>
                     </div>
 
-                    <div className="ms-3 col-5">
+                    <div className="col-12 col-lg-5 mt-4 mt-lg-0 text-center text-lg-start">
                         <div className="form">
                             <h1 className="fs-2 mb-2 w-bold">Log in to Exclusive</h1>
                             <h1 className="fs-6 mb-4">Enter your details below</h1>

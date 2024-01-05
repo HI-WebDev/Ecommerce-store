@@ -549,7 +549,7 @@ body {
 .login .or::before {
   content: "";
   position: absolute;
-  width: 47%;
+  width: calc(50% - 15px);
   height: 2px;
   background-color: #457ca0;
   left: 0%;
@@ -557,7 +557,7 @@ body {
 .login .or::after {
   content: "";
   position: absolute;
-  width: 47%;
+  width: calc(50% - 15px);
   height: 2px;
   background-color: #457ca0;
   right: 0%;

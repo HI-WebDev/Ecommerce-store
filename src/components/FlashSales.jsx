@@ -72,21 +72,24 @@ const FlashSales = () => {
             <div className="flash mt-5 mb-5">
                 <div className="container">
                     <Header title='Todays&apos;s' />
-                    <div className="timing d-flex align-items-center justify-content-between">
-                        <div className="time d-flex  align-items-center">
-                            <h2 className="fs-3 text-capitalize me-4 fw-bold">christmas sales</h2>
-                            <span className="days position-relative fs-3 me-3 fw-bold ms-5">{timeLeft.days} :</span>
-                            <span className="hours position-relative fs-3 me-3 fw-bold"> {timeLeft.hours} :</span>
-                            <span className="minutes position-relative fs-3 me-3 fw-bold"> {timeLeft.minutes} :</span>
-                            <span className="seconds position-relative fs-3 fw-bold">{timeLeft.seconds}</span>
+                    <div className="timing d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                        <div className="time d-flex flex-column flex-lg-row align-items-center">
+                            <h2 className="fs-3 text-capitalize me-0 me-lg-4 fw-bold">christmas sales</h2>
+                            <div className="d-flex mb-2 mt-2">
+                                <span className="days position-relative fs-3 me-4 me-lg-3 fw-bold ms-0 ms-lg-5">{timeLeft.days} :</span>
+                                <span className="hours position-relative fs-3 me-4 me-lg-3 fw-bold">{timeLeft.hours} :</span>
+                                <span className="minutes position-relative fs-3 me-4 me-lg-3 fw-bold">{timeLeft.minutes} :</span>
+                                <span className="seconds position-relative fs-3 fw-bold">{timeLeft.seconds}</span>
+                            </div>
                         </div>
                         <Arrows />
                     </div>
-                    <div className="row mt-4">
+
+                    <div className="row mt-4 mt-lg-5">
                         {fourProducts.loading && <h1>Loading...</h1>}
 
                         {fourProducts.map((product) => (
-                            <div key={product.id} className="col mb-5">
+                            <div key={product.id} className="col mb-4 mb-lg-3">
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">
@@ -137,7 +140,7 @@ const FlashSales = () => {
 
                         ))}
                         {fiveProducts.map((product) => (
-                            <div key={product.id} className={isClicked ? "col" : "col d-none"}>
+                            <div key={product.id} className={isClicked ? "col mb-4 mb-lg-3" : "col d-none"}>
                                 <div className={`product`}>
                                     <div className="card">
                                         <div className="image position-relative">
@@ -191,7 +194,7 @@ const FlashSales = () => {
                     </div>
                 </div>
 
-                <div className="d-flex justify-content-center mt-4">
+                <div className="d-flex justify-content-center mt-0">
                     <Button title={isClicked ? "View Less" : "View All Products"} funct={handleClicked} />
                 </div>
             </div>

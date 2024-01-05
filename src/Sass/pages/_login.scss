@@ -28,7 +28,7 @@
       content: "";
       // margin-top: 0.2rem;
       position: absolute;
-      width: 47%;
+      width: calc(50% - 15px);
       height: 2px;
       background-color: #457ca0;
       left: 0%;
@@ -37,7 +37,7 @@
       content: "";
       // margin-top: 0.2rem;
       position: absolute;
-      width: 47%;
+      width: calc(50% - 15px);
       height: 2px;
       background-color: #457ca0;
       right: 0%;
@@ -61,10 +61,10 @@
     .fb {
       background-color: #1877f2;
     }
-    .gogle{
-      background-color:#fafafa ;
+    .gogle {
+      background-color: #fafafa;
     }
-    
+
     // .insta {
     //   background-color: #fd1d1d;
     // }
