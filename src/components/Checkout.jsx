@@ -27,9 +27,9 @@ const Checkout = () => {
                 </h3>
                 <form action="">
                     <div className="row d-flex justify-content-between">
-                        <div className="col-5">
+                        <div className="col-12 col-lg-5 mb-5 mb-lg-0">
                             <div className="infos d-flex flex-column">
-                                <h1 className="text-capitalize fs-2 mb-4">Billing details</h1>
+                                <h1 className="text-capitalize text-center text-lg-start fs-2 mb-4">Billing details</h1>
                                 <label htmlFor="fname" className="text-capitalize text-black-50 fw-bold mb-1">first name</label>
                                 <input type="text" id="fname" className="me- mb-3 p-2" required />
 
@@ -60,7 +60,7 @@ const Checkout = () => {
                             </div>
                         </div>
 
-                        <div className="col-5">
+                        <div className="col-12 col-lg-5">
                             <div className="payment d-flex flex-column">
                                 {cart.map((product) => {
                                     return (
@@ -89,7 +89,7 @@ const Checkout = () => {
                                     <h1 className="fs-6 fw-bold text-capitalize">shipping:</h1>
                                     <h1 className="fs-6 fw-bold text-capitalize">${percontageToSubstract}</h1>
                                 </div>
-                                <div className=" mt-4 mb-4  d-flex justify-content-between align-items-center">
+                                <div className="mt-4 mb-4  d-flex justify-content-between align-items-center">
                                     <h1 className="fs-6 fw-bold text-capitalize">total:</h1>
                                     <h1 className="fs-6 fw-bold text-capitalize">${total}</h1>
                                 </div>
@@ -111,9 +111,8 @@ const Checkout = () => {
                                     </label>
                                 </div>
 
-
                                 <div className="coupon d-flex justify-content-between mb-4">
-                                    <input className="col-7" type="text" name="coupon" id="coupon" placeholder="Coupon Code" />
+                                    <input className="col-lg-7" type="text" name="coupon" id="coupon" placeholder="Coupon Code" />
                                     <Button title="Apply coupon" />
                                 </div>
                                 <div className="submit mt-1">
