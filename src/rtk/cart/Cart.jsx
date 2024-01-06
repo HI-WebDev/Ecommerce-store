@@ -28,7 +28,8 @@ const Cart = () => {
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-12">
 
-                            <div className="d-flex justify-content-between align-items-center mt-5 mb-5">
+                            <div className={cart.length >= 1 ? "d-flex justify-content-between align-items-center mt-5 mb-5"
+                                : "d-flex justify-content-between align-items-center mt-4 mb-0"}>
                                 <h3 className="fw-bold fs-6 mb-0 text-black">
                                     <span className="text-muted">Home</span> / Cart
                                 </h3>
@@ -80,12 +81,10 @@ const Cart = () => {
                                 )
                             })}
 
-                            <div className="helpers ">
+                            <div className={cart.length >= 1 ? "helpers" : "d-none"}>
                                 <div className="row mt-2 mt-lg-4">
                                     <div className="col-12 col-lg-7 mb-4 mb-lg-0">
-                                        <Link to='/home'
-                                            className={cart.length >= 1 ? "return btn text-capitalize fs-6  p-2 ps-4 pe-4 fw-bold"
-                                                : "d-none"}>
+                                        <Link to='/home' className=" return btn text-capitalize fs-6 p-2 ps-4 pe-4 fw-bold">
                                             return to shop
                                         </Link>
                                     </div>
@@ -116,8 +115,8 @@ const Cart = () => {
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
