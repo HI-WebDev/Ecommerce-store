@@ -33,7 +33,9 @@ const WishList = () => {
     return (
         <div className="wishlist mt-5 mb-5">
             <div className="container">
-                <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 mb-5">
+                <div className={wishlist.length ? "d-flex flex-column flex-md-row justify-content-between align-items-center mt-5 mb-5"
+                    : "d-flex flex-row justify-content-between align-items-center mt-0 mb-0"}
+                >
                     <h3 className="fw-bold fs-6 mb-3 mb-md-0 text-black">
                         Wishlist <span className="fs-">({wishlist.length})</span>
                     </h3>
