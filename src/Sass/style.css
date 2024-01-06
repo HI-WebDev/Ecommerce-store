@@ -234,6 +234,12 @@ body {
 .navbar {
   border-bottom: 1.5px solid #ddd;
 }
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
 .navbar .navbar-collapse form .form-outline {
   background-color: #f5f5f5;
   border-radius: 5px;
@@ -275,6 +281,16 @@ body {
   right: 25%;
 }
 
+@media (min-width: 0px) {
+  .home .image .mySwiper .swiper-slide {
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .home .image .mySwiper .swiper-slide {
+    height: 344px;
+  }
+}
 .flash .timing .time .days::before {
   content: "Days";
   position: absolute;

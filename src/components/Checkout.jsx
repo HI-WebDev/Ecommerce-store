@@ -83,7 +83,7 @@ const Checkout = () => {
 
                                 <div className="line mt-2 pb-2  d-flex justify-content-between align-items-center">
                                     <h1 className="fs-6 fw-bold text-capitalize">Subtotal:</h1>
-                                    <h1 className="fs-6 fw-bold text-capitalize">${subtotal}</h1>
+                                    <h1 className="fs-6 fw-bold text-capitalize">${subtotal.toFixed(2)}</h1>
                                 </div>
                                 <div className="line mt-4 pb-2  d-flex justify-content-between align-items-center">
                                     <h1 className="fs-6 fw-bold text-capitalize">shipping:</h1>
@@ -91,7 +91,7 @@ const Checkout = () => {
                                 </div>
                                 <div className="mt-4 mb-4  d-flex justify-content-between align-items-center">
                                     <h1 className="fs-6 fw-bold text-capitalize">total:</h1>
-                                    <h1 className="fs-6 fw-bold text-capitalize">${total}</h1>
+                                    <h1 className="fs-6 fw-bold text-capitalize">${total.toFixed(2)}</h1>
                                 </div>
 
                                 <div className="bank form-check mb-3">

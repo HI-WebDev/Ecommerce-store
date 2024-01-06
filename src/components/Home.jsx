@@ -42,7 +42,7 @@ const Home = () => {
       <div className="home mt-">
         <div className="container">
           <div className="row">
-            <div className="col-3">
+            <div className="d-none d-lg-block col-lg-3">
               <div className="aside pt-5 d-flex flex-column">
                 <span className="mb-3 fw-bold d-flex align-items-center position-relative" onClick={handleClick1}>
                   Woman’s Fashion
@@ -63,8 +63,8 @@ const Home = () => {
                 <span className=" fw-bold">Health & Beauty</span>
               </div>
             </div>
-            <div className="col-9">
-              <div className="image pt-5">
+            <div className="col-12 col-lg-9">
+              <div className="image pt-5 ">
                 <Swiper
                   spaceBetween={30}
                   centeredSlides={true}
@@ -73,19 +73,19 @@ const Home = () => {
                   modules={[Autoplay]}
                   className="mySwiper"
                 >
-                  <SwiperSlide style={{ height: "344px" }}>
+                  <SwiperSlide >
                     <img className='img-fluid' src={image} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide style={{ height: "344px" }}>
+                  <SwiperSlide >
                     <img className='img-fluid' src={image2} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide style={{ height: "344px" }}>
+                  <SwiperSlide >
                     <img className='img-fluid' src={image3} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide style={{ height: "344px" }}>
+                  <SwiperSlide>
                     <img className='img-fluid' src={image5} alt="hero" />
                   </SwiperSlide>
-                  <SwiperSlide style={{ height: "344px"}}>
+                  <SwiperSlide>
                     <img className='img-fluid' src={image6} alt="hero" />
                   </SwiperSlide>
                 </Swiper>

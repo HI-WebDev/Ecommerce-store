@@ -42,8 +42,8 @@ const Cart = () => {
                                 return (
                                     <div key={product.id} className="card rounded-3 mb-4">
                                         <div className="card-body p-4">
-                                            <div className="row d-flex justify-contnt-between align-items-center">
-                                                <div className="col-lg-2 ">
+                                            <div className="row d-flex justify-content-between align-items-center">
+                                                <div className="col-12 col-lg-2 d-flex justify-content-center justify-content-lg-start fw-bold mb-2 mb-lg-0">
                                                     <img src={product.image} className="img-fluid position-relative rounded-3"
                                                         alt="Cotton T-shirt" style={{ width: "4.5rem", height: "4rem" }} />
                                                     <span className="del position-absolute d-flex justify-content-center align-items-center"
@@ -51,24 +51,24 @@ const Cart = () => {
                                                         <FaXmark color="white" />
                                                     </span>
                                                 </div>
-                                                <div className="col-lg-3 d-flex ms-0 ps-0 fw-bold ">
+                                                <div className="col-12 col-lg-3 d-flex ms-0 ps-0 fw-bold text-center mb-2 mb-lg-0">
                                                     <p className="lead fw-normal mb-2">{product.title}</p>
                                                 </div>
 
-                                                <div className="col-lg-2 offset-lg-1 d-flex fw-bold r">
+                                                <div className="col-lg-2 offset-lg-1 d-flex justify-content-center justify-content-lg-start fw-bold mb-2 mb-lg-0">
                                                     <h5 className="mb-0 fs-6 fw-bold">${product.price}</h5>
                                                 </div>
 
-                                                <div className="col-lg-1 d-flex justify-content-center fw-bold ">
+                                                <div className="col-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
                                                     {product.quantity}
                                                 </div>
 
-                                                <div className="col-lg-1 offset-lg-1 d-flex justify-content-center fw-bold ">
+                                                <div className="col-lg-1 offset-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
                                                     <h5 className="mb-0 fs-6 fw-bold">${product.price * product.quantity}</h5>
                                                 </div>
 
 
-                                                <div className="col-lg-1 text-end">
+                                                <div className="col-lg-1 text-center text-lg-end">
                                                     <span className="text-danger fs-5" style={{ cursor: "pointer" }}
                                                         onClick={() => dispatch(deleteFromCart(product))}>
                                                         <FaTrashAlt />
@@ -81,8 +81,8 @@ const Cart = () => {
                             })}
 
                             <div className="helpers ">
-                                <div className="row mt-5">
-                                    <div className="col">
+                                <div className="row mt-2 mt-lg-4">
+                                    <div className="col-12 col-lg-7 mb-4 mb-lg-0">
                                         <Link to='/home'
                                             className={cart.length >= 1 ? "return btn text-capitalize fs-6  p-2 ps-4 pe-4 fw-bold"
                                                 : "d-none"}>
@@ -90,12 +90,12 @@ const Cart = () => {
                                         </Link>
                                     </div>
 
-                                    <div className="col-5">
+                                    <div className="col-12 col-lg-5 mt-1 mt-lg-0">
                                         <div className={cart.length >= 1 ? "total p-3 pt-3 pb-4" : "d-none"}>
                                             <h1 className="fs-4 mb-3 text-capitalize">cart total</h1>
                                             <div className="line pb-2 d-flex justify-content-between align-items-center">
                                                 <h1 className="fs-6 fw-bold text-capitalize">subtotal:</h1>
-                                                <h1 className="fs-6 fw-bold">${subtotal}</h1>
+                                                <h1 className="fs-6 fw-bold">${subtotal.toFixed(2)}</h1>
                                             </div>
                                             <div className="line mt-4 pb-2  d-flex justify-content-between align-items-center">
                                                 <h1 className="fs-6 fw-bold text-capitalize">shipping:</h1>

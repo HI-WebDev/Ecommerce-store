@@ -1,31 +1,34 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { FiHeart, FiShoppingCart } from "react-icons/fi";
+import { CgMenuGridO } from "react-icons/cg";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 import { useSelector } from 'react-redux'
 // import Home from './Home'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 // import { useState } from 'react'
 
 
 const Navbar = () => {
-    // const [active, setActive] = useState(false);
+    const [active, setActive] = useState(false);
 
-    // const handleClick = () => {
-    //     setActive(!active)
-    // }
+    const handleClick = () => {
+        setActive(!active)
+    }
     const cart = useSelector((state) => state.cart);
     const wishlist = useSelector((state) => state.wishList)
 
     return (
         <>
-            <div className="discount d-flex align-items-center justify-content-evenly p-2">
-                <h2 className="fs-6 ">
+            <div className="discount d-flex flex-column flex-lg-row text-center align-items-center justify-content-evenly p-2">
+                <h2 className="fs-6 lh-base mb-0">
                     {/* Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! */}
                     Summer Sale on All Swimwear with Free Express Shipping - 50% Off!
-                    <span className="fw-bold text-decoration-underline ms-3">ShopNow</span>
+                    <span className="fw-bold text-decoration-underline ms-2 ms-lg-3">ShopNow</span>
                 </h2>
-                <div className="dropdown">
+                <div className="dropdown mb-0">
                     <button className="btn language text-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         English
                     </button>
@@ -44,8 +47,9 @@ const Navbar = () => {
             <nav className="navbar sticky  navbar-expand-lg navbar-light pt-3">
                 <div className="container">
                     <a className="navbar-brand fw-bold" href="/home">HI-ECOMMERCE</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" onClick={handleClick}>
+                        {active ? <BsThreeDotsVertical /> : <CgMenuGridO />}
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
