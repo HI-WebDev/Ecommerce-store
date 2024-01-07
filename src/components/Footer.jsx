@@ -20,9 +20,9 @@ const Footer = () => {
                     <div className="col-12 col-md-6 col-lg-3 mb-3">
                         <ul className="list-unstyled">
                             <li className="fs-5 text-capitalize fw-bold mb-4">support</li>
-                            <li className="text-capitalize mb-3">morroco,casablanca</li>
-                            <li className=" mb-3">hidevelopper@gmail.com</li>
-                            <li className="text-capitalize mb-3">+212710xxxxx</li>
+                            <li className="text-capitalize mb-3">morroco,morroco</li>
+                            <li className=" mb-3">email@gmail.com</li>
+                            <li className="text-capitalize mb-3">+212xxxxxx</li>
                         </ul>
                     </div>
                     <div className="col-12 col-md-6 col-lg-3 mb-3">

@@ -4,9 +4,7 @@ import { FaDollarSign, FaSackDollar } from "react-icons/fa6";
 import { VscGift } from "react-icons/vsc";
 import Service from './helpers/Service';
 import EmployerCard from './helpers/EmployerCard';
-import emp1 from '../assets/images/emp1.png'
-import emp2 from '../assets/images/emp2.png'
-import emp3 from '../assets/images/emp3.png'
+import emp2 from '../assets/images/emp4.png'
 import Services from './Services';
 
 // Import Swiper React components
@@ -100,9 +98,9 @@ const About = () => {
 
                         <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
-                                img={emp1}
+                                img={emp2}
                                 alt="employer 1"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Founder & Developer"
                             />
                         </SwiperSlide>
@@ -111,25 +109,25 @@ const About = () => {
                             <EmployerCard
                                 img={emp2}
                                 alt="employer 2"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Marketing & SEO"
                             />
                         </SwiperSlide>
 
                         <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
-                                img={emp3}
+                                img={emp2}
                                 alt="employer 3"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Website Designer"
                             />
                         </SwiperSlide>
-                        
+
                         <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
-                                img={emp1}
+                                img={emp2}
                                 alt="employer 1"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Founder & Developer"
                             />
                         </SwiperSlide>
@@ -138,19 +136,20 @@ const About = () => {
                             <EmployerCard
                                 img={emp2}
                                 alt="employer 2"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Marketing & SEO"
                             />
                         </SwiperSlide>
 
                         <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
-                                img={emp3}
+                                img={emp2}
                                 alt="employer 3"
-                                title="Houssini Ismail"
+                                title="H-I Developer"
                                 desc="Website Designer"
                             />
                         </SwiperSlide>
+
                     </Swiper>
                 </div>
 
