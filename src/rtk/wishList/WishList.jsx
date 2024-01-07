@@ -49,7 +49,7 @@ const WishList = () => {
                 <div className="row d-flex justify-content-ceter">
                     {wishlist.map((product) => {
                         return (
-                            <div key={product.id} className="col-12 col-lg-3 mb-4">
+                            <div key={product.id} className="col-12 col-md-6 col-lg-3 mb-4">
                                 <div className="product">
                                     <div className="card">
                                         <div className="image position-relative">

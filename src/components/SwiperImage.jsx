@@ -45,7 +45,7 @@ const SwiperImage = () => {
     }, []);
 
     return (
-        <div className="swiperImage mt-5 mb-5">
+        <div className="d-none d-lg-block swiperImage mt-5 mb-5">
             <div className="container">
                 <Swiper
                     spaceBetween={30}

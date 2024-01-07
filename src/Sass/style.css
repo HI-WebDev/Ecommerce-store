@@ -91,6 +91,9 @@ body {
 .product .card .image .outils .heart.clicked {
   color: red !important;
 }
+.product .card .image .outils .heart:hover {
+  color: red !important;
+}
 .product .card .image .addCart {
   background-color: #000;
   border-radius: 0px !important;

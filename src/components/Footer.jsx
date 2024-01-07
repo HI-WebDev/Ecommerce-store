@@ -10,14 +10,14 @@ const Footer = () => {
         <div className="footer me-0 ms-0 ps-0 pe-0 mt-5 pt-5">
             <div className="container">
                 <div className="row mb-4 text-center text-lg-start">
-                    <div className="col-12 col-lg-3 ">
+                    <div className="col-12 col-md-6 col-lg-3 ">
                         <ul className="list-unstyled">
                             <li className="fs-5 text-capitalize fw-bold mb-4">exclusive</li>
                             <li className="text-capitalize mb-3">subscribe</li>
                             <li className="text-capitalize mb-3">Get 10% off your first order</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-lg-3 mb-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-3">
                         <ul className="list-unstyled">
                             <li className="fs-5 text-capitalize fw-bold mb-4">support</li>
                             <li className="text-capitalize mb-3">morroco,casablanca</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                             <li className="text-capitalize mb-3">+212710xxxxx</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-lg-3 mb-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-3">
                         <ul className="list-unstyled">
                             <li className="fs-5 text-capitalize fw-bold mb-4">quick link</li>
                             <li className="text-capitalize mb-3">Privacy Policy</li>
@@ -34,7 +34,7 @@ const Footer = () => {
                             <li className="text-capitalize mb-3">Contact</li>
                         </ul>
                     </div>
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-md-6 col-lg-3">
                         <div className="d-flex flex-column">
                             <span className="fs-5 text-capitalize fw-bold mb-4">download app</span>
                             <span className="mb-2 text-white-50 fw-bold">Save $3 with App New User Only</span>

@@ -53,7 +53,7 @@ const About = () => {
                 </div>
 
                 <div className="row mt-5 pt-3 pt-lg-5 pb-0 pb-lg-5 mb-lg-5">
-                    <div className="col-12 col-lg-3 mb-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-3">
                         <Service bord="1.5px solid #aaa"
                             anim="animate"
                             icon={<FaStoreAlt />}
@@ -61,7 +61,7 @@ const About = () => {
                             desc="Sallers active our site" />
                     </div>
 
-                    <div className="col-12 col-lg-3 mb-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-3">
                         <Service bord="1.5px solid #aaa"
                             anim="animate"
                             icon={<FaDollarSign />}
@@ -69,7 +69,7 @@ const About = () => {
                             desc="Monthly Product Sale" />
                     </div>
 
-                    <div className="col-12 col-lg-3 mb-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-3 mb-md-0 mb-lg-3">
                         <Service bord="1.5px solid #aaa"
                             anim="animate"
                             icon={<VscGift />}
@@ -77,7 +77,7 @@ const About = () => {
                             desc="Customer active in our site" />
                     </div>
 
-                    <div className="col-12 col-lg-3">
+                    <div className="col-12 col-md-6 col-lg-3 mb-lg-3">
                         <Service bord="1.5px solid #aaa"
                             anim="animate"
                             icon={<FaSackDollar />}
@@ -98,7 +98,7 @@ const About = () => {
                         className="mySwiper"
                     >
 
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp1}
                                 alt="employer 1"
@@ -107,7 +107,7 @@ const About = () => {
                             />
                         </SwiperSlide>
 
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp2}
                                 alt="employer 2"
@@ -116,7 +116,7 @@ const About = () => {
                             />
                         </SwiperSlide>
 
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp3}
                                 alt="employer 3"
@@ -125,7 +125,7 @@ const About = () => {
                             />
                         </SwiperSlide>
                         
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp1}
                                 alt="employer 1"
@@ -134,7 +134,7 @@ const About = () => {
                             />
                         </SwiperSlide>
 
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp2}
                                 alt="employer 2"
@@ -143,7 +143,7 @@ const About = () => {
                             />
                         </SwiperSlide>
 
-                        <SwiperSlide className='col-12 col-lg-4 d-flex justify-content-center'>
+                        <SwiperSlide className='col-12 col-md-6 col-lg-4 d-flex justify-content-center'>
                             <EmployerCard
                                 img={emp3}
                                 alt="employer 3"
@@ -157,7 +157,6 @@ const About = () => {
                 <div className="pb-0 pb-lg-4">
                     <Services />
                 </div>
-
             </div>
         </div>
     )

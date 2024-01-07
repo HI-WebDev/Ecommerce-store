@@ -26,8 +26,8 @@ const Checkout = () => {
                     <span className="text-muted">Cart</span> / CheckOut
                 </h3>
                 <form action="">
-                    <div className="row d-flex justify-content-between">
-                        <div className="col-12 col-lg-5 mb-5 mb-lg-0">
+                    <div className="row d-flex justify-content-center justify-content-lg-between">
+                        <div className="col-12 col-md-10 col-lg-5 mb-5 mb-lg-0">
                             <div className="infos d-flex flex-column">
                                 <h1 className="text-capitalize text-center text-lg-start fs-2 mb-4">Billing details</h1>
                                 <label htmlFor="fname" className="text-capitalize text-black-50 fw-bold mb-1">first name</label>
@@ -60,7 +60,7 @@ const Checkout = () => {
                             </div>
                         </div>
 
-                        <div className="col-12 col-lg-5">
+                        <div className="col-12 col-md-10 col-lg-5">
                             <div className="payment d-flex flex-column">
                                 {cart.map((product) => {
                                     return (

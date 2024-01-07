@@ -52,24 +52,23 @@ const Cart = () => {
                                                         <FaXmark color="white" />
                                                     </span>
                                                 </div>
-                                                <div className="col-12 col-lg-3 d-flex ms-0 ps-0 fw-bold text-center mb-2 mb-lg-0">
+                                                <div className="col-12 col-lg-3 ms-0 ps-0 fw-bold d-flex justify-content-center justify-content-lg-start text-center text-lg-start mb-2 mb-lg-0">
                                                     <p className="lead fw-normal mb-2">{product.title}</p>
                                                 </div>
 
-                                                <div className="col-lg-2 offset-lg-1 d-flex justify-content-center justify-content-lg-start fw-bold mb-2 mb-lg-0">
+                                                <div className="col-12 col-lg-2 offset-lg-1 d-flex justify-content-center justify-content-lg-start fw-bold mb-2 mb-lg-0">
                                                     <h5 className="mb-0 fs-6 fw-bold">${product.price}</h5>
                                                 </div>
 
-                                                <div className="col-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
+                                                <div className="col-12 col-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
                                                     {product.quantity}
                                                 </div>
 
-                                                <div className="col-lg-1 offset-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
+                                                <div className="col-12 col-lg-1 offset-lg-1 d-flex justify-content-center fw-bold mb-2 mb-lg-0">
                                                     <h5 className="mb-0 fs-6 fw-bold">${product.price * product.quantity}</h5>
                                                 </div>
 
-
-                                                <div className="col-lg-1 text-center text-lg-end">
+                                                <div className="col-12 col-lg-1 text-center text-lg-end">
                                                     <span className="text-danger fs-5" style={{ cursor: "pointer" }}
                                                         onClick={() => dispatch(deleteFromCart(product))}>
                                                         <FaTrashAlt />
@@ -115,8 +114,8 @@ const Cart = () => {
                         </div>
                     </div>
                 </section>
-            </div >
-        </div >
+            </div>
+        </div>
     )
 }
 

@@ -10,7 +10,7 @@ import Browse from "./Browse"
 import FlashSales from "./FlashSales"
 import OurProducts from "./OurProducts"
 import Services from "./Services"
-// import SwiperImage from "./SwiperImage"
+import SwiperImage from "./SwiperImage"
 import ThisMonth from "./ThisMonth"
 
 
@@ -98,7 +98,7 @@ const Home = () => {
       <FlashSales />
       <Browse />
       <ThisMonth />
-      {/* <SwiperImage /> */}
+      <SwiperImage />
       <OurProducts />
       <Arrivals />
       <Services />

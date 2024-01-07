@@ -73,8 +73,8 @@ const FlashSales = () => {
                 <div className="container">
                     <Header title='Todays&apos;s' />
                     <div className="timing d-flex flex-column flex-lg-row align-items-center justify-content-between">
-                        <div className="time d-flex flex-column flex-lg-row align-items-center">
-                            <h2 className="fs-3 text-capitalize me-0 me-lg-4 fw-bold">christmas sales</h2>
+                        <div className="time d-flex flex-column flex-md-row align-items-center">
+                            <h2 className="fs-3 text-capitalize me-0 me-md-4 fw-bold">christmas sales</h2>
                             <div className="d-flex mb-2 mt-2">
                                 <span className="days position-relative fs-3 me-4 me-lg-3 fw-bold ms-0 ms-lg-5">{timeLeft.days} :</span>
                                 <span className="hours position-relative fs-3 me-4 me-lg-3 fw-bold">{timeLeft.hours} :</span>
@@ -89,7 +89,7 @@ const FlashSales = () => {
                         {fourProducts.loading && <h1>Loading...</h1>}
 
                         {fourProducts.map((product) => (
-                            <div key={product.id} className="col mb-4 mb-lg-3">
+                            <div key={product.id} className="col-12 col-md-6 col-lg-3 mb-4 mb-lg-3">
                                 <div className={`product `}>
                                     <div className="card">
                                         <div className="image position-relative">
@@ -140,7 +140,7 @@ const FlashSales = () => {
 
                         ))}
                         {fiveProducts.map((product) => (
-                            <div key={product.id} className={isClicked ? "col mb-4 mb-lg-3" : "col d-none"}>
+                            <div key={product.id} className={isClicked ? "col-12 col-md-6 col-lg-3 mb-4 mb-lg-3" : "col d-none"}>
                                 <div className={`product`}>
                                     <div className="card">
                                         <div className="image position-relative">
